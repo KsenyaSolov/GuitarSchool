@@ -42,6 +42,7 @@ html
     &__content-container
         padding-top: 0px
         display: flex
+        justify-content: space-between
     &__first-elipse
         position: absolute
         z-index: 0
@@ -69,11 +70,17 @@ html
         a
             text-decoration: none
             color: black
+        a:hover
+            color: $color-orange
+
+.left-wraper
+    width: 600px
+
 
 .right-wraper
-    position: absolute
-    top: 200px
-    right: 360px
+    position: abolute
+    z-index: 2
+    padding-top: 200px
     width: 372px
     &__icons
         width: 180px
@@ -270,9 +277,15 @@ html
     margin-bottom: 40px
     font-size: 20px
 
+
+
 .footer
     position: relative
-    min-height: 360px
+    &__container
+        min-height: 360px
+        display: flex
+        align-items: center
+        justify-content: flex-end
     &__img
         height: 450px
         position: absolute
@@ -280,11 +293,10 @@ html
         left: -10px
     &__right-wraper
         flex-direction: column
-        display: flex
-        justify-content: center
-        align-items: end
     &__title
         margin-bottom: 40px
+        display: flex
+        justify-content: center
     &__left-wraper
         width: 450px
     &__icons

@@ -404,6 +404,7 @@ html {
 .main-section__content-container {
   padding-top: 0px;
   display: flex;
+  justify-content: space-between;
 }
 .main-section__first-elipse {
   position: absolute;
@@ -438,11 +439,18 @@ html {
   text-decoration: none;
   color: black;
 }
+.nav-menu__item a:hover {
+  color: #F2994A;
+}
+
+.left-wraper {
+  width: 600px;
+}
 
 .right-wraper {
-  position: absolute;
-  top: 200px;
-  right: 360px;
+  position: abolute;
+  z-index: 2;
+  padding-top: 200px;
   width: 372px;
 }
 .right-wraper__icons {
@@ -686,7 +694,12 @@ html {
 
 .footer {
   position: relative;
+}
+.footer__container {
   min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .footer__img {
   height: 450px;
@@ -696,12 +709,11 @@ html {
 }
 .footer__right-wraper {
   flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: end;
 }
 .footer__title {
   margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
 }
 .footer__left-wraper {
   width: 450px;
